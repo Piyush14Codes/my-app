@@ -2,14 +2,14 @@ import React,{useState} from 'react'
 
 export default function Accordion() {
     const [myStyle,setMyStyle] = useState({
-        color: 'white',
-        backgroundColor: 'black',
+        color: 'black',
+        backgroundColor: 'white',
         borderRadius: '10px',
         paddingBottom: '10px'
     })
     const [btnText, setBtnText] = useState("Enable Dark Mode");
     const toggleStyle = () =>{
-        if(myStyle.color == 'white'){
+        if(myStyle.color === 'white'){
             setMyStyle({
                 color: 'black',
                 backgroundColor: 'white',
